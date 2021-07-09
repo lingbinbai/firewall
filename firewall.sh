@@ -20,7 +20,7 @@ APP_SSH=9022
 APP_HTTP=80
 
 #-----------------------<Clear Original Rule>------------
-$IPT -t filter -F
+$IPT -t filter -F INPUT
 #------------------------<Set Default Rule>--------------
 $IPT -P INPUT   DROP
 $IPT -P FORWARD DROP
